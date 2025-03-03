@@ -1,0 +1,48 @@
+/* assets/css/custom-theme.css */
+:root {
+  /* Primary colors - Atlas green theme (toned down) */
+  --bs-primary: #1e8a57;
+  --bs-primary-rgb: 30, 138, 87;
+  --bs-primary-text-emphasis: #13673f;
+  --bs-primary-bg-subtle: #e6f5ee;
+  --bs-primary-border-subtle: #b3e6cc;
+
+  /* Link colors */
+  --bs-link-color: #1e8a57;
+  --bs-link-hover-color: #13673f;
+}
+
+/* Override primary button styles */
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-color: #fff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #177346;
+  --bs-btn-hover-border-color: #13673f;
+}
+
+/* Text colors */
+.text-primary {
+  color: #1e8a57 !important;
+}
+
+/* Background colors */
+.bg-primary {
+  background-color: #1e8a57 !important;
+}
+
+.bg-primary.bg-opacity-10 {
+  background-color: rgba(30, 138, 87, 0.1) !important;
+}
+
+/* Navbar light theme adjustments */
+.navbar-light {
+  background-color: var(--bs-body-bg) !important;
+}
+
+/* Subtle glow effect for Atlas branding */
+.navbar-brand i,
+footer i {
+  text-shadow: 0 0 8px rgba(30, 138, 87, 0.5);
+}
